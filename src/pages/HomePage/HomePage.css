@@ -1,0 +1,111 @@
+
+body {
+  background-color: #EFF2F4;
+}
+
+
+
+.homepage {
+  max-height: 60vh;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 100% 100% 20px  rgba(0, 0, 0, 1);
+  margin-bottom: 0%;
+  
+  }
+  
+  .homepage::before {
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../images/homeBackground.jpg');
+    background-size: 110%;
+    background-position: var(--bg-pos-x, 50%) var(--bg-pos-y, 60%);
+    background-repeat: no-repeat;
+    filter: brightness(.4); /* Adjust the brightness value to make it darker or lighter */
+    z-index: -1;
+  
+  }
+@media (max-height: 800px) {
+  .homepage::before {
+    background-size: 170%;
+  }
+}
+
+@media (max-width: 800px) {
+  .homepage::before {
+    background-size: 170%;
+  }
+}
+
+@media (max-width: 800px) and (max-height: 1300px) {
+  .homepage::before {
+    background-size: 200%;
+  }
+}
+
+
+
+  .homepage h1 {
+    color: #fff;
+    font-size: 64px;
+    font: 500;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    margin-top: 3%;
+    width: 95%;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+    text-align: center;
+    z-index: 1;
+  }
+
+  .homepage h2 {
+    color: #fff;
+    font-size: 32px;
+    font: 500;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    width: 95%;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+    text-align: center;
+    z-index: 1;
+  }
+
+  .homepage p {
+    color: #000000;
+  }
+  
+  .homepage button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 1000;
+    margin: 0;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px; /* rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25); /* subtle shadow for depth */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* smooth transition to hover color */
+  }
+  
+  .homepage button:hover {
+    background-color: #00b30f;
+  }
+
+  .customProperties1 {
+    margin: 0%;
+    margin-top: 2.25%;
+    margin-left: 0%;
+    height: 10%;
+  }
+  
+  
+  

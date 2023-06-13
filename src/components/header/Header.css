@@ -1,0 +1,117 @@
+/* Header.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+.notification-bar {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0%;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.notification-bar span {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 3%;
+  margin-right: 0%;
+}
+
+.notification-bar a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.notification-bar i {
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+.header {
+    background-color: hwb(0 100% 0% / 0);
+    --opacity: 0;
+    padding: 20px;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    top: 40px;
+    position: sticky;
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .logo-image {
+    width: 200px;
+    height: 200px;
+
+    @media (max-width: 1500px) { /* Adjust to the size you want */
+        height: 15vh; /* Adjust to the size you want */
+        width: 15vh;
+    }
+  }
+
+
+  
+  .navigation {
+    display: flex;
+  }
+
+  .navigation-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: -10%;
+    margin-left: 25px;
+    position: relative;
+    
+    @media (max-width: 1500px) {
+      display: none;
+    }
+  }
+  
+  
+  .navigation a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .navigation a:hover {
+    color: #555;
+  }
+
+  .header button {
+    padding: 4px 15px;
+    font-size: 18px;
+    background-color: #ffffffa1;
+    color: #0000009f;
+    font: 500;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font: bold;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.644);
+    
+  }
+  
+  .header button:hover {
+    background-color: #e4e4e4;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }
+  
+  

@@ -1,0 +1,137 @@
+
+.contact {
+    max-height: 50vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 100% 100% 20px  rgba(0, 0, 0, 1);
+  }
+  
+  .contact::before {
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.4);
+
+    background-image: url('../../images/ServiceBackground.png');
+    background-size: auto 180%; /* Adjusted value */
+    background-position: var(--bg-pos-x, 50%) var(--bg-pos-y, 60%);
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+
+  .contact h1 {
+    color: #fff;
+    font-size: 64px;
+    font: 500;
+    font-family: 'Roboto', sans-serif;
+    margin: 0%                                           ;
+    margin-top: 3%;
+    width: 95%;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+    text-align: center;
+  }
+
+  .contact h2 {
+    color: #fff;
+    font-size: 32px;
+    font: 500;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    width: 100%;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+    text-align: center;
+  }
+  
+  .contact button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 1000;
+    margin: 0;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px; /* rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25); /* subtle shadow for depth */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* smooth transition to hover color */
+  }
+  
+  .contact button:hover {
+    background-color: #00b30f;
+  }
+
+  .contact customProperties1 {
+    margin: 0%;
+    margin-top: 2.25%;
+    margin-left: 0%;
+    height: 10%;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: row; /* New value. */
+    justify-content: space-between; /* This ensures there is some space between the map and contact info. */
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0e361a;
+  }
+  
+  .contact-map {
+    flex: 2; /* New value. This means that the map will take up the remaining space available. */
+  }
+  
+  .contact-info {
+    flex: 2; /* New value. This means that the contact info will take up the remaining space available. */
+    padding: 20px;
+  }
+  
+
+.contact-info h1 {
+  font-size: 32px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-phone-email {
+    background-color: rgba(226, 226, 226, 0);
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 10px 0%;
+    width: 100%;
+    margin-left: 45%;
+    top: 0;
+    z-index: 3;
+  }
+
+  .contact-phone-email span {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 0%;
+    margin-right: 1%;
+  }
+
+  .contact-phone-email a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .contact-phone-email i {
+    color: #ffffff;
+    margin-right: 5px;
+  }
+  
+  
